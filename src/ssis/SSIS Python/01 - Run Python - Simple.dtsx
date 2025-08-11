@@ -1,0 +1,66 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/8/2025 2:27:05 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="TDSDEV25"
+  DTS:CreatorName="AzureAD\TimMitchell"
+  DTS:DTSID="{A1A4EF02-28E1-4160-AD2B-176F066C319C}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="01 - Run Python - Simple"
+  DTS:PackageType="5"
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{EF11D6D1-5E9D-45D0-8382-A6AF588AE3A4}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\ExProc - Call Python"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="This Execute Process Task will invoke Python to run the specified file or function"
+      DTS:DTSID="{1BF5B85E-00BC-41C8-A1BC-1FEDDFFB8DA7}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ExProc - Call Python"
+      DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Python313\python.exe"
+          Arguments="t:\python_ssis\src\python\do_stuff.py"
+          WindowStyle="Hidden" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="180,42"
+          Id="Package\ExProc - Call Python"
+          TopLeft="64.5,72.5" />
+        <AnnotationLayout
+          Text="Simple, no-frills invocation of Python script."
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="259,40"
+          Id="c2f0aee5-44f9-4da1-a537-106ad40acf13"
+          TopLeft="275,73" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -92,6 +92,10 @@ typings/
 cython_debug/
 
 # IDEs
+*.vs
+*.vs/
+*.database
+*/.vs/*
 .vscode/
 .idea/
 *.swp

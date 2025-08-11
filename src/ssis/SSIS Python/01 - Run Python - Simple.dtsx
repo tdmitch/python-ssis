@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="01 - Run Python - Simple"
   DTS:PackageType="5"
-  DTS:VersionBuild="31"
-  DTS:VersionGUID="{EF11D6D1-5E9D-45D0-8382-A6AF588AE3A4}">
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{ADD5B859-50FF-421C-BF58-B337DF9197E2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -59,6 +59,13 @@
           Size="259,40"
           Id="c2f0aee5-44f9-4da1-a537-106ad40acf13"
           TopLeft="275,73" />
+        <AnnotationLayout
+          Text="In this first example, we're invoking a very simple Execute Process Task&#xD;&#xA;run to call the Python script. There's no logging captured here (other than&#xD;&#xA;the binary successor failure of the Python script), and the runtime values&#xD;&#xA;are all hard-coded into the task."
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="419,88"
+          Id="ee2cfa42-7b50-4fd4-921a-d989ce4f8e08"
+          TopLeft="280,165" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
